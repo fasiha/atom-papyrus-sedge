@@ -6,7 +6,17 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "papyrus-sedge:toggle"
+    "atom-workspace": "papyrus-sedge:toggle",
+    "atom-text-editor": [
+      "hydrogen:select-kernel",
+      "hydrogen:connect-to-remote-kernel",
+      "hydrogen:run",
+      "hydrogen:run-and-move-down",
+      "hydrogen:run-all",
+      "hydrogen:run-all-above",
+      "hydrogen:run-cell",
+      "hydrogen:run-cell-and-move-down"
+    ]
   },
   "repository": "https://github.com/fasiha/atom-papyrus-sedge",
   "license": "MIT",
