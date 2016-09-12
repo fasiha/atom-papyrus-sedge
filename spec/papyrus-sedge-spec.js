@@ -4,8 +4,8 @@ import PapyrusSedge from '../lib/papyrus-sedge';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
-// To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
-// or `fdescribe`). Remove the `f` to unfocus the block.
+// To run a specific `it` or `describe` block add an `f` to the front (e.g.
+// `fit` or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('PapyrusSedge', () => {
   let workspaceElement, activationPromise;
@@ -25,17 +25,17 @@ describe('PapyrusSedge', () => {
       // activated.
       atom.commands.dispatch(workspaceElement, 'papyrus-sedge:toggle');
 
-      waitsForPromise(() => {
-        return activationPromise;
-      });
+      waitsForPromise(() => { return activationPromise; });
 
       runs(() => {
         expect(workspaceElement.querySelector('.papyrus-sedge')).toExist();
 
-        let papyrusSedgeElement = workspaceElement.querySelector('.papyrus-sedge');
+        let papyrusSedgeElement =
+            workspaceElement.querySelector('.papyrus-sedge');
         expect(papyrusSedgeElement).toExist();
 
-        let papyrusSedgePanel = atom.workspace.panelForItem(papyrusSedgeElement);
+        let papyrusSedgePanel =
+            atom.workspace.panelForItem(papyrusSedgeElement);
         expect(papyrusSedgePanel.isVisible()).toBe(true);
         atom.commands.dispatch(workspaceElement, 'papyrus-sedge:toggle');
         expect(papyrusSedgePanel.isVisible()).toBe(false);
@@ -57,13 +57,12 @@ describe('PapyrusSedge', () => {
       // activated.
       atom.commands.dispatch(workspaceElement, 'papyrus-sedge:toggle');
 
-      waitsForPromise(() => {
-        return activationPromise;
-      });
+      waitsForPromise(() => { return activationPromise; });
 
       runs(() => {
         // Now we can test for view visibility
-        let papyrusSedgeElement = workspaceElement.querySelector('.papyrus-sedge');
+        let papyrusSedgeElement =
+            workspaceElement.querySelector('.papyrus-sedge');
         expect(papyrusSedgeElement).toBeVisible();
         atom.commands.dispatch(workspaceElement, 'papyrus-sedge:toggle');
         expect(papyrusSedgeElement).not.toBeVisible();
