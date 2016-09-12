@@ -13,6 +13,13 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "consumedServices": {
+    "hydrogen.most-recent-result.provider": {
+      "versions": {
+        "1.0.0": "hydrogenConsumer"
+      }
+    }
+  },
   "dependencies": {
   }
 }
