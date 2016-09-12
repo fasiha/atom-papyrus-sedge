@@ -6,8 +6,10 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "papyrus-sedge:toggle",
-    "atom-text-editor": [
+    "atom-workspace": [
+      "papyrus-sedge:toggle",
+      "papyrus-sedge:select-code-block",
+      "papyrus-sedge:hydrogen-code-block",
       "hydrogen:select-kernel",
       "hydrogen:connect-to-remote-kernel",
       "hydrogen:run",
