@@ -3,11 +3,15 @@
     "atom-text-editor": [
       {
         "label": "Papyrus-sedge: Hydrogen code block",
-        "command": "papyrus-sedge:hydrogen-code-block"
+        "command": "papyrus-sedge:hydrogen-codeblock"
+      },
+      {
+        "label": "Papyrus-sedge: Hydrogen all code blocks",
+        "command": "papyrus-sedge:hydrogen-all-codeblocks"
       },
       {
         "label": "Papyrus-sedge: select code-block",
-        "command": "papyrus-sedge:select-code-block"
+        "command": "papyrus-sedge:select-codeblock"
       }
     ]
   },
@@ -20,11 +24,15 @@
           "submenu": [
             {
               "label": "Hydrogen code block",
-              "command": "papyrus-sedge:hydrogen-code-block"
+              "command": "papyrus-sedge:hydrogen-codeblock"
+            },
+            {
+              "label": "Hydrogen all code blocks",
+              "command": "papyrus-sedge:hydrogen-all-codeblocks"
             },
             {
               "label": "Select code block",
-              "command": "papyrus-sedge:select-code-block"
+              "command": "papyrus-sedge:select-codeblock"
             }
           ]
         }
